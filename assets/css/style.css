@@ -140,6 +140,13 @@ body {
   margin-bottom: 15px;
 }
 
+.card-text {
+  color: var(--black-coral);
+  font-size: var(--fs-4);
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
 .btn {
   font-size: var(--fs-4);
   font-weight: var(--fw-500);
@@ -441,7 +448,7 @@ body {
 
 .blog-list {
   display: grid;
-  gap: 25px;
+  gap: 100px;
 }
 
 .blog-card {
@@ -499,6 +506,7 @@ body {
 .blog-meta-item .blog-meta-link {
   color: var(--black-coral);
   transition: var(--transition);
+  font-weight: 500;
 }
 
 .blog-meta-item .blog-meta-link:is(:hover, :focus) {
@@ -515,38 +523,12 @@ body {
 }
 
 /*-----------------------------------*\
-    #NEWSLETTER
-  \*-----------------------------------*/
-
-.newsletter {
-  background: var(--cultured);
-  padding-block: var(--section-padding);
-}
-
-.newsletter-banner {
-  margin-bottom: 30px;
-}
-
-.newsletter .section-title {
-  margin-bottom: 25px;
-}
-
-.input-field {
-  background: var(--white);
-  outline: 1px solid hsla(0, 0%, 0%, 0.1);
-  padding: 15px 20px;
-  border-radius: var(--radius-4);
-  margin-bottom: 15px;
-  transition: var(--transition);
-}
-
-.input-field:focus {
-  outline-color: var(--red-crayola);
-}
-
-/*-----------------------------------*\
     #FOOTER
   \*-----------------------------------*/
+
+.footer {
+  background-color: var(--cultured);
+}
 
 .footer-top {
   padding-block: var(--section-padding);
@@ -1083,7 +1065,7 @@ body {
      */
 
   .footer-top .container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
 
@@ -1188,22 +1170,17 @@ body {
   }
 
   .blog-list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  /**
-     * NEWSLETTER
-     */
+.contact-icons {
+  display: flex;
+  gap: 10px;
+  color: var(--red-crayola);
+}
 
-  .newsletter .container {
-    gap: 80px;
-  }
-
-  .newsletter-banner {
-    width: 45%;
-  }
-
-  .newsletter-content {
-    width: 55%;
-  }
+.contact-icons > a {
+  color: inherit;
+  transition: var(--transition);
 }
